@@ -17,19 +17,6 @@ const RedirectPage = () => {
     };
 
     countdown();
-
-    // Check if the URL contains a specific pattern
-    const currentUrl = window.location.href;
-    const animePattern = "nakanime.my.id/anime/";
-    const watchPattern = "nakanime.my.id/watch/";
-
-    if (currentUrl.includes(animePattern)) {
-      const pathAfterAnime = currentUrl.split(animePattern)[1];
-      window.location.href = `https://nknime.com/anime/${pathAfterAnime}`;
-    } else if (currentUrl.includes(watchPattern)) {
-      const pathAfterWatch = currentUrl.split(watchPattern)[1];
-      window.location.href = `https://nknime.com/watch/${pathAfterWatch}`;
-    }
   }, []);
 
   return (
