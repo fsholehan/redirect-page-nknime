@@ -10,7 +10,11 @@ const RedirectPage = () => {
           setTimeout(countdown, 1000);
           return prevSeconds - 1;
         } else {
-          window.location.href = "https://nknime.com";
+          const currentPath =
+            window.location.pathname +
+            window.location.search +
+            window.location.hash;
+          window.location.href = `https://nknime.com${currentPath}`;
           return 0;
         }
       });
