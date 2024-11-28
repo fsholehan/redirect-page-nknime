@@ -14,7 +14,7 @@ const RedirectPage = () => {
             window.location.pathname +
             window.location.search +
             window.location.hash;
-          window.location.href = `https://nknime.com${currentPath}`;
+          window.location.href = `https://nakanime.my.id${currentPath}`;
           return 0;
         }
       });
@@ -29,7 +29,7 @@ const RedirectPage = () => {
       <div className="bg-white p-10 rounded shadow-md text-center">
         <span className="text-lg sm:text-2xl mb-4">
           The domain has changed! Please wait while we redirect you to
-          nknime.com.
+          nakanime.my.id.
         </span>
         <h1 className="text-2xl mb-4">
           Redirecting in{" "}
@@ -37,13 +37,13 @@ const RedirectPage = () => {
         </h1>
         <p className="text-gray-600 mb-4">
           You will be redirected to
-          <a href="https://nknime.com" className="text-blue-500 underline">
-            nknime.com
+          <a href="https://nakanime.my.id" className="text-blue-500 underline">
+            nakanime.my.id
           </a>
         </p>
         <p className="text-gray-500">
           If not redirected,
-          <a href="https://nknime.com" className="text-blue-500 underline">
+          <a href="https://nakanime.my.id" className="text-blue-500 underline">
             click here
           </a>
           .
